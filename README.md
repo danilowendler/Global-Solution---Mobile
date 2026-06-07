@@ -1,4 +1,4 @@
-# 🛰️ Argus: Sistema de Prevenção da Síndrome de Kessler
+#  Argus: Sistema de Prevenção da Síndrome de Kessler
 
 > Console tático móvel para **monitoramento e evasão de detritos espaciais** na órbita baixa da Terra (LEO).
 
@@ -8,7 +8,7 @@ Construído com identidade de **console de operações**: dark mode tático, tip
 
 ---
 
-## 🧠 Inteligência simulada + APIs
+##  Inteligência simulada + APIs
 
 O Argus integra duas APIs públicas através de uma **Service Layer** com Axios (cliente central, `baseURL`, timeout e interceptors que normalizam erros em `AppError`):
 
@@ -25,7 +25,7 @@ O Argus integra duas APIs públicas através de uma **Service Layer** com Axios 
 
 ---
 
-## 🌱 ODS contemplados
+##  ODS contemplados
 
 - **ODS 9** — Indústria, inovação e infraestrutura
 - **ODS 11** — Cidades e comunidades sustentáveis
@@ -33,7 +33,7 @@ O Argus integra duas APIs públicas através de uma **Service Layer** com Axios 
 
 ---
 
-## 🧱 Stack tecnológica
+##  Stack tecnológica
 
 | Camada | Tecnologia |
 |---|---|
@@ -47,7 +47,7 @@ O Argus integra duas APIs públicas através de uma **Service Layer** com Axios 
 
 ---
 
-## 🗂️ Arquitetura de pastas
+##  Arquitetura de pastas
 
 ```txt
 src/
@@ -66,19 +66,19 @@ src/
 
 ---
 
-## 📱 Funcionalidades
+##  Funcionalidades
 
-- **🏠 Home (Dashboard)** — painel de comando denso: resumo de alvos (total, críticos, alto risco, próximo TCA), **gráfico de distribuição de risco**, **widget climático da base de lançamento** e os alvos prioritários rastreados.
-- **📋 Listagens** — catálogo orbital completo com **busca textual** (designação / NORAD), filtros por severidade e ordenação por TCA.
-- **⭐ Favoritos** — ativos prioritários salvos localmente (AsyncStorage), persistidos entre sessões, com **histórico de atividade recente** (toque para refavoritar / limpar).
-- **⚙️ Configurações** — **alternância de tema dark/light** persistida em AsyncStorage, fonte de dados e versão.
-- **🎯 Painel de Conjunção** — toque em qualquer alvo (Home, Listagens ou Favoritos) para abrir o detalhe da aproximação: **contagem regressiva ao vivo** até o TCA, **geometria de aproximação** (diagrama Flexbox da distância ao corredor de varredura) e um **Simulador de Janela de Evasão** — ajuste a antecedência da manobra e o impulso Δv e veja na hora se a evasão esvazia o corredor de segurança (veredito **VIÁVEL / INSUFICIENTE**).
+- ** Home (Dashboard)** — painel de comando denso: resumo de alvos (total, críticos, alto risco, próximo TCA), **gráfico de distribuição de risco**, **widget climático da base de lançamento** e os alvos prioritários rastreados.
+- ** Listagens** — catálogo orbital completo com **busca textual** (designação / NORAD), filtros por severidade e ordenação por TCA.
+- ** Favoritos** — ativos prioritários salvos localmente (AsyncStorage), persistidos entre sessões, com **histórico de atividade recente** (toque para refavoritar / limpar).
+- ** Configurações** — **alternância de tema dark/light** persistida em AsyncStorage, fonte de dados e versão.
+- ** Painel de Conjunção** — toque em qualquer alvo (Home, Listagens ou Favoritos) para abrir o detalhe da aproximação: **contagem regressiva ao vivo** até o TCA, **geometria de aproximação** (diagrama Flexbox da distância ao corredor de varredura) e um **Simulador de Janela de Evasão** — ajuste a antecedência da manobra e o impulso Δv e veja na hora se a evasão esvazia o corredor de segurança (veredito **VIÁVEL / INSUFICIENTE**).
 
 Toda tela que consome dados trata os estados **loading** (skeletons), **empty**, **error** (com retry) e **success**.
 
 ---
 
-## 🚀 Instalação e execução
+##  Instalação e execução
 
 > Pré-requisitos: Node.js LTS e o app **Expo Go** (para rodar em um device físico) ou um emulador Android/iOS.
 
@@ -104,25 +104,25 @@ No terminal do Expo, escolha a plataforma:
 
 ---
 
-## 🖼️ Capturas de tela
+##  Capturas de tela
 
 > _Operador: coloque os PNGs em `docs/screenshots/`. Os caminhos abaixo já estão demarcados no formato `![alt](caminho)` — basta soltar os arquivos para que as imagens renderizem._
 
-### 🌐 Web
+###  Web
 ![Screenshot Web — Dashboard](docs/screenshots/web-home.png)
 
-### 🤖 Android
+###  Android
 ![Screenshot Android — Dashboard](docs/screenshots/android-home.png)
 
-### 🍏 iOS
+###  iOS
 ![Screenshot iOS — Dashboard](docs/screenshots/ios-home.png)
 
-### 🎯 Painel de Conjunção
+###  Painel de Conjunção
 ![Screenshot — Painel de Conjunção (contagem de TCA + Simulador de Evasão)](docs/screenshots/conjuncao.png)
 
 ---
 
-## 👥 Integrantes
+##  Integrantes
 
 | Integrante | RM |
 |---|---|
@@ -134,4 +134,4 @@ No terminal do Expo, escolha a plataforma:
 
 ---
 
-> ⚠️ O repositório **não contém a pasta `node_modules`** (garantido via `.gitignore`). Rode `npm install` antes de iniciar.
+>  O repositório **não contém a pasta `node_modules`** (garantido via `.gitignore`). Rode `npm install` antes de iniciar.
